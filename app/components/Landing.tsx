@@ -1,9 +1,11 @@
 "use client";
 
-import { Check } from "@phosphor-icons/react/";
+
 import Image from "next/image";
 import Modal from "./Modal";
 import { useState } from "react";
+import { Check } from "@phosphor-icons/react";
+
 
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

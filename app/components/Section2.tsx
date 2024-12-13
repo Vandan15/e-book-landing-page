@@ -5,7 +5,7 @@ import {
   Check,
   Headset,
   RocketLaunch,
-} from "@phosphor-icons/react/";
+} from "@phosphor-icons/react";
 import Image from "next/image";
 
 const Section2 = () => {

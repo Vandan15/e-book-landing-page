@@ -1,6 +1,6 @@
 "use client";
 
-import { Check } from "@phosphor-icons/react/";
+import { Check } from "@phosphor-icons/react";
 
 const ThingsYouWillLearn = () => {
   return (
