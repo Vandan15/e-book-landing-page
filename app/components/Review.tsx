@@ -43,24 +43,27 @@ const Review = () => {
   ];
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollContainerMDRef = useRef<HTMLDivElement>(null);
+
+  const handleDotClickOnMD = (index: number) => {
+    setActiveIndex(index);
+
+    if (scrollContainerMDRef.current && typeof window !== undefined) {
+      const offset = window.innerWidth * (index - 1) - 16 - 60;
+      scrollContainerMDRef.current.scrollLeft = offset;
+    }
+  };
+
+  const extendedReviews = [reviews[reviews.length - 1], ...reviews, reviews[0]];
 
   const handleDotClick = (index: number) => {
     setActiveIndex(index);
+
     if (scrollContainerRef.current) {
       const offset = 400 * index - (1200 - 400) / 2;
       scrollContainerRef.current.scrollLeft = offset;
     }
   };
-
-  const handleDotClickOnMD = (index: number) => {
-    setActiveIndex(index);
-    if (scrollContainerRef.current && typeof window !== undefined) {
-      const offset = window.innerWidth * (index - 1) - 16 - 60;
-      scrollContainerRef.current.scrollLeft = offset;
-    }
-  };
-
-  const extendedReviews = [reviews[reviews.length - 1], ...reviews, reviews[0]];
 
   return (
     <section className="flex w-full flex-col items-center justify-center bg-bgDark">
@@ -117,7 +120,7 @@ const Review = () => {
         {/* Slider */}
         <div className="hidden w-full items-center justify-center max-md:flex">
           <div
-            ref={scrollContainerRef}
+            ref={scrollContainerMDRef}
             className="no-scrollbar flex w-full max-w-[1200px] overflow-x-scroll scroll-smooth"
           >
             {reviews.map((review, index) => (

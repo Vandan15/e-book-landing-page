@@ -1,7 +1,5 @@
 "use client";
 
-// import { Icon } from "@phosphor-icons/react";
-
 import { Certificate, Kanban, Headset } from "@phosphor-icons/react";
 
 const WhoThisBookIsFor = () => {

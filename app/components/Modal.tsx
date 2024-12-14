@@ -22,6 +22,7 @@ const Modal = ({
     country: "",
     industry: "",
     problem: "",
+    refrenceId: "",
   });
 
   const handleInputChange = (
@@ -157,9 +158,14 @@ const Modal = ({
             </div>
             <div className="flex flex-col items-center justify-center">
               <Image src={"/QR.png"} alt="QR" height={300} width={300} />
-              <h4 className="text-center text-[22px] font-bold text-black">
-                Refrence Id : BJN415djbwbd{" "}
-              </h4>
+              <input
+                type="text"
+                name="refrenceId"
+                placeholder="Enter Refrence Id"
+                value={formData.refrenceId}
+                onChange={handleInputChange}
+                className="w-full rounded border p-2"
+              />
             </div>
             <button
               onClick={() => {
@@ -168,7 +174,7 @@ const Modal = ({
               }}
               className="mt-[12px] rounded-md bg-primary px-[30px] py-[12px] font-bold text-white transition-all duration-500 hover:bg-bgDark hover:text-white"
             >
-              Close
+              Submit
             </button>
           </div>
         )}

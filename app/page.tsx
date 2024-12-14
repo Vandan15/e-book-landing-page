@@ -9,6 +9,7 @@ import Section2 from "./components/Section2";
 import ThingsYouWillLearn from "./components/ThingsYouWillLearn";
 import WhoThisBookIsFor from "./components/WhoThisBookIsFor";
 import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <ChapterCover />
       <Review />
       <Faq />
+      <Footer />
       <ScrollToTop />
     </main>
   );
