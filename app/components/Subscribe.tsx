@@ -21,7 +21,7 @@ const Subscribe = () => {
               className="h-[60px] w-full max-w-[700px] rounded-sm px-[12px] text-[18px] outline-none"
             />
             <button className="flex h-[50px] w-full max-w-[700px] items-center justify-center gap-[12px] rounded-sm bg-primary text-[18px] font-bold text-white transition-all duration-500 hover:bg-[#007bff]">
-              Subscrive <ArrowRight />
+              Subscribe <ArrowRight />
             </button>
           </form>
           <p className="mt-[24px] text-center text-[16px] text-white">

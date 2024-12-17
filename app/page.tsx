@@ -18,9 +18,9 @@ const Home = () => {
       <Landing />
       <Section2 />
       <ThingsYouWillLearn />
+      <ChapterCover />
       <WhoThisBookIsFor />
       <Subscribe />
-      <ChapterCover />
       <Review />
       <Faq />
       <Footer />
