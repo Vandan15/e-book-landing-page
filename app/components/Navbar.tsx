@@ -15,6 +15,7 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
   return (
     <nav className="sticky top-0 z-50 flex h-[100px] w-full min-w-[320px] items-center justify-center bg-bgDark max-sm:h-[80px]">
       <div className="h-full w-full max-w-[1636px]">
@@ -28,47 +29,38 @@ const Navbar = () => {
           {/* Navbar Menu */}
           <div className="flex items-center justify-center gap-[24px] text-[16px] font-extrabold text-white max-lg:hidden">
             <Link
+              href={{
+                hash: "",
+              }}
               className="transition-all duration-500 hover:text-primary"
-              href={"#"}
             >
               Home
             </Link>
             <Link
+              href={{
+                hash: "about",
+              }}
               className="transition-all duration-500 hover:text-primary"
-              href={"#"}
             >
               About
             </Link>
             <Link
+              href={{
+                hash: "chapters",
+              }}
               className="transition-all duration-500 hover:text-primary"
-              href={"#"}
             >
               Chapters
             </Link>
             <Link
+              href={{
+                hash: "reviews",
+              }}
               className="transition-all duration-500 hover:text-primary"
-              href={"#"}
             >
               Reviews
             </Link>
-            <Link
-              className="transition-all duration-500 hover:text-primary"
-              href={"#"}
-            >
-              Author
-            </Link>
-            <Link
-              className="transition-all duration-500 hover:text-primary"
-              href={"#"}
-            >
-              Pricing
-            </Link>
-            <Link
-              className="transition-all duration-500 hover:text-primary"
-              href={"#"}
-            >
-              Contact
-            </Link>
+
             <div className="flex items-center justify-center gap-3">
               <div className="flex cursor-pointer rounded-full bg-white bg-opacity-[0.08] p-2 transition-all duration-500 hover:bg-primary">
                 <FacebookLogo size={20} />

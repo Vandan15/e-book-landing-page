@@ -22,13 +22,13 @@ const Faq = () => {
           <div className="mt-[24px] flex w-1/2 flex-col items-start justify-center gap-[32px] max-lg:w-full max-lg:flex-col">
             <Accordian
               faqId={1}
-              question="How to contact with Customer Service?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="I have hired a person/agency to run my ads, should I buy this e-book?"
+              answer="Yes, you can buy this e-book and send it to a particular person, telling them to implement the steps mentioned here. This will be a great learning opportunity for them to improve your campaigns."
             />
             <Accordian
               faqId={2}
-              question="New update fixed all bug and issues?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="How do I access the eBook after purchase?"
+              answer="Once you make the payment, you’ll receive an instant download link in your email. You can access the eBook immediately and start reading right away."
             />
             <Accordian
               faqId={3}
@@ -37,8 +37,8 @@ const Faq = () => {
             />
             <Accordian
               faqId={4}
-              question="How to purchase the book online?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="Is the eBook available offline?"
+              answer="Yes, once you download the eBook, you can read it offline anytime, anywhere, even without an internet connection."
             />
           </div>
 
@@ -46,23 +46,18 @@ const Faq = () => {
           <div className="mt-[24px] flex w-1/2 flex-col items-start justify-center gap-[32px] max-lg:w-full max-lg:flex-col">
             <Accordian
               faqId={5}
-              question="How to contact with Customer Service?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="What if I lose the eBook file?"
+              answer="If you lose your eBook, you can usually re-download it from the link provided after purchase via email."
             />
             <Accordian
               faqId={6}
-              question="New update fixed all bug and issues?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="Will I get updates if the eBook is revised?"
+              answer="Yes, when we add new chapters, tools, or techniques, you will receive an updated version."
             />
             <Accordian
               faqId={7}
-              question="Website reponse taking time, how to improve?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
-            />
-            <Accordian
-              faqId={8}
-              question="How to purchase the book online?"
-              answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
+              question="How can I ask questions or get support for the eBook?"
+              answer="If you have any queries related to e-books, you can contact us at conversionshastra@gmail.com. Our team will try to answer you as soon as possible."
             />
           </div>
         </div>
@@ -95,13 +90,13 @@ const Accordian = ({
         onClick={() => handleToggle(faqId)}
       >
         {/* Question */}
-        <div className="items-strat flex justify-between gap-[12px] text-white">
+        <div className="items-center flex justify-between gap-[12px] text-white">
           <p className="text-[18px]">{question}</p>
 
           {isActive == faqId ? (
-            <Minus size={18} weight="bold" />
+            <Minus size={18} weight="bold" className="shrink-0"/>
           ) : (
-            <Plus size={18} weight="bold" />
+            <Plus size={18} weight="bold" className="shrink-0"/>
           )}
         </div>
       </div>
