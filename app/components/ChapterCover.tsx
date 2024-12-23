@@ -1,6 +1,6 @@
 const ChapterCover = () => {
   return (
-    <section className="flex w-full flex-col items-center justify-center bg-bgDark">
+    <section className="flex w-full flex-col items-center justify-center bg-bgDark" id="chapters">
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[100px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Section Title */}
         <h1 className="relative w-full text-center text-[46px] font-extrabold text-white max-sm:text-[38px]">

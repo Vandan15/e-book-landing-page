@@ -1,7 +1,6 @@
 "use client";
 
 import { Star } from "@phosphor-icons/react";
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 const Review = () => {
@@ -11,7 +10,7 @@ const Review = () => {
     {
       id: 1,
       image: "/review-1.jpg",
-      name: "Akshaye Parekh",
+      name: "- Akshaye Parekh",
       designation: "Owner Skybean Branding Agency, California",
       reviewTitle: "",
       review:
@@ -20,7 +19,7 @@ const Review = () => {
     {
       id: 2,
       image: "/review-2.jpg",
-      name: "Bipin Goel",
+      name: "- Bipin Goel",
       designation: "Owner Sunrise Investments, Indore",
       reviewTitle: "",
       review:
@@ -29,7 +28,7 @@ const Review = () => {
     {
       id: 3,
       image: "/review-3.jpg",
-      name: "Dr Geeta Bhosle",
+      name: "- Dr Geeta Bhosle",
       designation: "Geeta Nutrition Club, East Kalyan, Mumbai",
       reviewTitle: "",
       review:
@@ -61,10 +60,13 @@ const Review = () => {
   };
 
   return (
-    <section className="flex w-full flex-col items-center justify-center bg-bgDark">
+    <section
+      className="flex w-full flex-col items-center justify-center bg-bgDark"
+      id="reviews"
+    >
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[100px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Section Title */}
-        <h1 className="relative w-full text-center text-[46px] font-extrabold text-white max-sm:text-[38px]">
+        <h1 className="relative w-full max-w-[800px] text-center text-[46px] font-extrabold text-white max-sm:text-[38px]">
           {` See How This eBook Helped Others Generate Premium Leads`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
@@ -156,8 +158,6 @@ const Review = () => {
 export default Review;
 
 const Card = ({
-  reviewTitle,
-  image,
   name,
   review,
 }: {
@@ -178,13 +178,13 @@ const Card = ({
       {/* <h3 className="text-[22px] font-bold text-[#051431]">{reviewTitle}</h3> */}
       <p className="text-[18px] text-[#666666]">{review}</p>
       <div className="flex items-center justify-center gap-[24px]">
-        <Image
+        {/* <Image
           src={image}
           alt={image}
           height={60}
           width={60}
           className="rounded-full"
-        />
+        /> */}
         <h5 className="text-[18px] text-[#666666]">{name}</h5>
       </div>
     </div>

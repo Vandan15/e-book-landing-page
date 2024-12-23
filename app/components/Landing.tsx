@@ -1,11 +1,9 @@
 "use client";
 
-
 import Image from "next/image";
-import Modal from "./Modal";
 import { useState } from "react";
 import { Check } from "@phosphor-icons/react";
-
+import PurchaseModal from "./PurchaseModal";
 
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,9 +14,12 @@ const Landing = () => {
         {/* Left */}
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex max-w-[600px] flex-col gap-[24px] text-white max-lg:max-w-full">
-            <h3 className="text-[16px]">Struggling with Low-Quality Leads? OR Getting High-Quality Leads at Very High Cost?</h3>
+            <h3 className="text-[16px]">
+              Struggling with Low-Quality Leads? OR Getting High-Quality Leads
+              at Very High Cost?
+            </h3>
             <h1 className="text-[56px] font-extrabold leading-[58px] max-sm:text-[38px]">
-            This e-book is your ALL-IN-ONE solution
+              This e-book is your ALL-IN-ONE solution
             </h1>
 
             {/* List */}
@@ -31,7 +32,11 @@ const Landing = () => {
                     color="#ff4343"
                   />
                 </div>
-                <p>With over 5 years of experience in the lead generation ecosystem, we have made an e-book to help you generate high-quality leads that your business needs.</p>
+                <p>
+                  With over 5 years of experience in the lead generation
+                  ecosystem, we have made an e-book to help you generate
+                  high-quality leads that your business needs.
+                </p>
               </div>
               <div className="flex items-start justify-start gap-[12px]">
                 <div className="flex min-w-[32px] items-center justify-center">
@@ -41,21 +46,28 @@ const Landing = () => {
                     color="#ff4343"
                   />
                 </div>
-                <p>It includes proven strategies trusted by top lead generation agencies to acquire HIGH-QUALITY leads at AFFORDABLE COSTS.</p>
+                <p>
+                  It includes proven strategies trusted by top lead generation
+                  agencies to acquire HIGH-QUALITY leads at AFFORDABLE COSTS.
+                </p>
               </div>
             </div>
 
             {/* Btn */}
             <div>
               <button
-                className="rounded-md bg-primary px-[40px] py-[16px] font-bold transition-all duration-500 hover:bg-white hover:text-primary"
+                className="mb-1 rounded-md bg-primary px-[40px] py-[16px] text-[20px] font-bold transition-all duration-500 hover:bg-white hover:text-primary"
                 onClick={() => setIsModalOpen(true)}
               >
-                <span className="text-3xl">199/-</span>(43% OFF)
+                Get Your E-book Now (199/-)
               </button>
+              <p className="text-[14px] italic">43% OFF (Including GST.)</p>
             </div>
 
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+            <PurchaseModal
+              isOpen={isModalOpen}
+              onClose={() => setIsModalOpen(false)}
+            />
           </div>
         </div>
 

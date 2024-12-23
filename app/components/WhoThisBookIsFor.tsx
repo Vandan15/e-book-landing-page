@@ -1,6 +1,6 @@
 "use client";
 
-import { Certificate, Kanban, Headset } from "@phosphor-icons/react";
+import { CheckCircle, Briefcase, HourglassSimple } from "@phosphor-icons/react";
 
 const WhoThisBookIsFor = () => {
   return (
@@ -18,17 +18,17 @@ const WhoThisBookIsFor = () => {
         {/* Cards */}
         <div className="mt-[24px] flex w-full flex-wrap items-center justify-center gap-[32px] max-lg:flex-col">
           <Card
-            Icon={Certificate}
+            Icon={CheckCircle}
             heading=""
             para="No fluff, just actionable advice for each of your lead-related issues."
           />
           <Card
-            Icon={Kanban}
+            Icon={Briefcase}
             heading=""
             para="Industry-Specific Tips — Real estate, B2B, consulting, education, and more."
           />
           <Card
-            Icon={Headset}
+            Icon={HourglassSimple}
             heading=""
             para="Quick & Skimmable content - To Avoid Reading Boring Lengthy Content (40 minutes to Complete)"
           />
@@ -48,7 +48,7 @@ const Card = ({
   Icon: React.ElementType;
 }) => {
   return (
-    <div className="group flex w-[calc(33%-32px)] flex-col items-center justify-start gap-[24px] rounded-lg bg-white bg-opacity-[0.05] p-[32px] hover:bg-opacity-[0.1] max-lg:w-full">
+    <div className="group flex min-h-[230px] w-[calc(33%-32px)] flex-col items-center justify-start gap-[24px] rounded-lg bg-white bg-opacity-[0.05] p-[32px] hover:bg-opacity-[0.1] max-lg:w-full">
       <Icon size={48} className="text-primary" />
       <div className="flex flex-col items-center justify-center gap-[12px] text-center">
         {heading && (
