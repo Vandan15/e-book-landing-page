@@ -24,7 +24,7 @@ const Section2 = () => {
         {/* Right */}
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex flex-col text-white max-lg:max-w-full">
-            <h1 className="mt-[8px] text-[46px] font-extrabold leading-[58px] max-sm:text-[38px]">
+            <h1 className="mt-[8px] text-[28px] font-extrabold md:text-[32px]">
               Immediately Buy This e-book If You are Struggling With the Below
               Lead Related Issues…
             </h1>
@@ -36,7 +36,7 @@ const Section2 = () => {
             {/* List */}
             <div className="mt-[36px] flex flex-col gap-[24px] px-[24px] max-sm:px-[12px] lg:flex-row">
               <div className="flex flex-col gap-[16px]">
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -50,7 +50,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -64,7 +64,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -78,7 +78,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -92,7 +92,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -108,7 +108,7 @@ const Section2 = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-[16px]">
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -122,7 +122,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -136,7 +136,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -150,7 +150,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
@@ -165,7 +165,7 @@ const Section2 = () => {
                     </h5>
                   </div>
                 </div>
-                <div className="flex items-center justify-start gap-[32px] max-lg:gap-[24px]">
+                <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
                     <CheckCircle
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"

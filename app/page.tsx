@@ -8,7 +8,6 @@ import Section2 from "./components/Section2";
 import ThingsYouWillLearn from "./components/ThingsYouWillLearn";
 import WhoThisBookIsFor from "./components/WhoThisBookIsFor";
 import Subscribe from "./components/Subscribe";
-import Footer from "./components/Footer";
 import CommonLayout from "./components/CommonLayout";
 
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
         <Subscribe />
         <Review />
         <Faq />
-        <Footer />
         <ScrollToTop />
       </main>
     </CommonLayout>

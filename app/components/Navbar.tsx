@@ -6,9 +6,11 @@ import {
   PinterestLogo,
   TwitterLogo,
 } from "@phosphor-icons/react";
+import Logo from "@/app/assets/logo.png";
 
 import { useState } from "react";
 import { ROUTES } from "@/utils/constants";
+import Image from "next/image";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 flex h-[100px] w-full min-w-[320px] items-center justify-center bg-bgDark max-sm:h-[80px]">
+    <nav className="sticky top-0 z-50 flex h-[64px] w-full min-w-[320px] items-center justify-center bg-bgDark">
       <div className="h-full w-full max-w-[1636px]">
         {/* Desktop Navbar */}
         <div className="flex h-full items-center justify-between border-b-[1px] border-b-[#ffffff0d] px-[160px] max-xl:px-[60px] max-sm:px-[30px]">
@@ -26,7 +28,7 @@ const Navbar = () => {
             href={{ pathname: ROUTES.home }}
             className="text-3xl font-extrabold text-white"
           >
-            BookHunt
+            <Image src={Logo} alt="logo" height={80} width={180} />
           </Link>
 
           {/* Navbar Menu */}
