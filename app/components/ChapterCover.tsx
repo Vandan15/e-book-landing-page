@@ -175,7 +175,7 @@ const ChapterCover = () => {
     >
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[100px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Section Title */}
-        <h1 className="relative w-full text-center text-[46px] font-extrabold text-white max-sm:text-[38px]">
+        <h1 className="relative w-full text-center text-[28px] font-extrabold text-white max-sm:text-[38px] md:text-[32px]">
           {` Chapters Covered to Make You Master of Lead Generation`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>

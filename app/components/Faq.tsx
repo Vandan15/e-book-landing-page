@@ -7,7 +7,7 @@ const Faq = () => {
     <section className="flex w-full flex-col items-center justify-center bg-bgLight">
       <div className="flex w-full max-w-[1636px] flex-col items-center gap-[32px] px-[160px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Section Title */}
-        <h1 className="relative w-full text-center text-[46px] font-extrabold text-white max-sm:text-[38px]">
+        <h1 className="relative w-full text-center text-[28px] font-extrabold text-white md:text-[32px]">
           {` Frequently Asked Questions`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
@@ -90,13 +90,13 @@ const Accordian = ({
         onClick={() => handleToggle(faqId)}
       >
         {/* Question */}
-        <div className="items-center flex justify-between gap-[12px] text-white">
+        <div className="flex items-center justify-between gap-[12px] text-white">
           <p className="text-[18px]">{question}</p>
 
           {isActive == faqId ? (
-            <Minus size={18} weight="bold" className="shrink-0"/>
+            <Minus size={18} weight="bold" className="shrink-0" />
           ) : (
-            <Plus size={18} weight="bold" className="shrink-0"/>
+            <Plus size={18} weight="bold" className="shrink-0" />
           )}
         </div>
       </div>

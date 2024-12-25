@@ -42,7 +42,7 @@ const Landing = () => {
                     color="#ff4343"
                   />
                 </div>
-                <p>
+                <p className="text-[16px] md:text-[18px]">
                   With over 5 years of experience in the lead generation
                   ecosystem, we have made an e-book to help you generate
                   high-quality leads that your business needs.
@@ -56,7 +56,7 @@ const Landing = () => {
                     color="#ff4343"
                   />
                 </div>
-                <p>
+                <p className="text-[16px] md:text-[18px]">
                   It includes proven strategies trusted by top lead generation
                   agencies to acquire HIGH-QUALITY leads at AFFORDABLE COSTS.
                 </p>
@@ -66,7 +66,7 @@ const Landing = () => {
             {/* Btn */}
             <div>
               <button
-                className="mb-1 rounded-md bg-primary px-[40px] py-[16px] text-[20px] font-bold transition-all duration-500 hover:bg-white hover:text-primary"
+                className="mb-1 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold transition-all duration-500 hover:bg-white hover:text-primary md:text-[20px]"
                 onClick={handleButtonClick}
               >
                 Get Your E-book Now (199/-)

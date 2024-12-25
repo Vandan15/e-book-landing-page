@@ -51,7 +51,9 @@ const Footer = () => {
                 conversionshastra@gmail.com
               </Link>
               <Link
-                href={"#"}
+                href={{
+                  pathname: ROUTES.contact,
+                }}
                 className="text-[16px] text-muted hover:text-primary"
               >
                 Contact us
