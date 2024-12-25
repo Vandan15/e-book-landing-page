@@ -7,6 +7,7 @@ import { omit } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import QrCode from "@/app/assets/qr-code.png";
 
 const PurchaseModal = ({
   isOpen,
@@ -34,20 +35,43 @@ const PurchaseModal = ({
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handlePersonalInfoFormSubmit = (
+  const handlePersonalInfoFormSubmit = async (
     e: React.FormEvent<HTMLFormElement>
   ) => {
     e.preventDefault();
-    pushDataLayerEvent({
-      event: "user_info_added",
-      button_text: "Continue",
-      button_location: "inside_purchase_modal",
-      ecommerce: {
-        currency: "INR",
-        value: 199,
-      },
-    });
-    setStep(2);
+    try {
+      // Make the fetch request
+      setIsLoading(true);
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbz93XvEn-3JfIEBSQeNmZAz8aU1nBITVvuuLxhRRGhikNDuH3x0_qx1fnRRwm50VJ1akA/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain", // Send data as JSON
+          },
+          body: JSON.stringify({ ...formData, status: "PENDING" }),
+        }
+      );
+
+      // Handle the response
+      if (response.ok) {
+        await response.text();
+        pushDataLayerEvent({
+          event: "user_info_added",
+          button_text: "Continue",
+          button_location: "inside_purchase_modal",
+          ecommerce: {
+            currency: "INR",
+            value: 199,
+          },
+        });
+        setStep(2);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handlePaymentFormSubmit = async (
@@ -64,7 +88,7 @@ const PurchaseModal = ({
           headers: {
             "Content-Type": "text/plain", // Send data as JSON
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({ ...formData, status: "COMPLETED" }),
         }
       );
 
@@ -149,11 +173,12 @@ const PurchaseModal = ({
                 <button
                   type="submit"
                   className="rounded-md bg-primary px-[30px] py-[12px] font-bold text-white transition-all duration-500 hover:bg-bgDark hover:text-white disabled:opacity-50"
-                  disabled={checkIfKeysAreEmpty(
-                    omit(formData, ["referenceId"])
-                  )}
+                  disabled={
+                    checkIfKeysAreEmpty(omit(formData, ["referenceId"])) ||
+                    isLoading
+                  }
                 >
-                  Continue (1/2)
+                  {isLoading ? "Processing..." : "Continue (1/2)"}
                 </button>
               </div>
             </form>
@@ -189,8 +214,8 @@ const PurchaseModal = ({
                 <X size={24} weight="bold" color="#000000" />
               </button>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <Image src={"/QR.png"} alt="QR" height={300} width={300} />
+            <div className="mt-[16px] flex flex-col items-center justify-center gap-2">
+              <Image src={QrCode} alt="QR" height={300} width={300} />
               <input
                 type="text"
                 name="referenceId"
@@ -222,7 +247,7 @@ const PurchaseModal = ({
                   }) || isLoading
                 }
               >
-                Confirm
+                {isLoading ? "Processing..." : "Confirm"}
               </button>
             </div>
           </form>
