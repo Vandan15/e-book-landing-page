@@ -4,9 +4,19 @@ import Image from "next/image";
 import { useState } from "react";
 import { Check } from "@phosphor-icons/react";
 import PurchaseModal from "./PurchaseModal";
+import { pushDataLayerEvent } from "@/utils/analytics";
 
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    pushDataLayerEvent({
+      event: "cta_click",
+      button_text: "Get Your E-book Now (199/-)",
+      button_location: "landing_section",
+    });
+    setIsModalOpen(true);
+  };
 
   return (
     <section className="flex w-full flex-col items-center justify-center bg-bgDark">
@@ -57,7 +67,7 @@ const Landing = () => {
             <div>
               <button
                 className="mb-1 rounded-md bg-primary px-[40px] py-[16px] text-[20px] font-bold transition-all duration-500 hover:bg-white hover:text-primary"
-                onClick={() => setIsModalOpen(true)}
+                onClick={handleButtonClick}
               >
                 Get Your E-book Now (199/-)
               </button>
