@@ -6,14 +6,14 @@ const WhoThisBookIsFor = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center bg-bgLight">
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[160px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
-        <h1 className="relative w-full text-center text-[28px] font-extrabold text-white max-sm:text-[38px] md:text-[32px]">
+        <h1 className="relative w-full text-center text-[28px] font-extrabold text-white md:text-[32px]">
           {`Don’t Like Reading E-books? Worry Not, You won’t be Bored As It Includes,`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
-        <p className="w-full max-w-[550px] text-center text-muted">
+        {/* <p className="w-full max-w-[550px] text-center text-muted">
           This book is concerned with creating typography and is essential for
           professionals who regularly work for clients.
-        </p>
+        </p> */}
 
         {/* Cards */}
         <div className="mt-[24px] flex w-full flex-wrap items-center justify-center gap-[32px] max-lg:flex-col">

@@ -11,15 +11,15 @@ const Faq = () => {
           {` Frequently Asked Questions`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
-        <p className="w-full max-w-[750px] text-center text-muted">
+        {/* <p className="w-full max-w-[750px] text-center text-muted">
           This book is concerned with creating typography and is essential for
           professionals who regularly work for clients.
-        </p>
+        </p> */}
 
         {/* Accordians */}
-        <div className="flex w-full items-start gap-[32px] max-lg:flex-col max-lg:gap-0">
+        <div className="flex w-full max-w-[800px] flex-col items-start gap-[32px]">
           {/* Left Column */}
-          <div className="mt-[24px] flex w-1/2 flex-col items-start justify-center gap-[32px] max-lg:w-full max-lg:flex-col">
+          <div className="flex flex-col items-start justify-center gap-[32px]">
             <Accordian
               faqId={1}
               question="I have hired a person/agency to run my ads, should I buy this e-book?"
@@ -43,7 +43,7 @@ const Faq = () => {
           </div>
 
           {/* Right Column */}
-          <div className="mt-[24px] flex w-1/2 flex-col items-start justify-center gap-[32px] max-lg:w-full max-lg:flex-col">
+          <div className="flex flex-col items-start justify-center gap-[32px]">
             <Accordian
               faqId={5}
               question="What if I lose the eBook file?"
@@ -86,7 +86,7 @@ const Accordian = ({
   return (
     <div className={`w-[calc(100%)]`}>
       <div
-        className="w-full cursor-pointer rounded-full bg-white bg-opacity-[0.05] px-[28px] py-[20px]"
+        className="w-full cursor-pointer rounded-xl bg-white bg-opacity-[0.05] px-[28px] py-[20px] md:rounded-full"
         onClick={() => handleToggle(faqId)}
       >
         {/* Question */}

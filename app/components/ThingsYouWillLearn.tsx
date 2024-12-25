@@ -10,10 +10,10 @@ const ThingsYouWillLearn = () => {
           {` Who is This E-book For?`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
-        <p className="w-full max-w-[550px] text-center text-muted">
+        {/* <p className="w-full max-w-[550px] text-center text-muted">
           This book is concerned with creating typography and is essential for
           professionals who regularly work for clients.
-        </p>
+        </p> */}
 
         {/* Cards */}
         <div className="mt-[24px] flex w-full flex-wrap items-center justify-between gap-[32px] max-lg:flex-col">

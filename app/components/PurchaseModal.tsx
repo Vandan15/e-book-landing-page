@@ -2,7 +2,7 @@
 import { pushDataLayerEvent } from "@/utils/analytics";
 import { ROUTES } from "@/utils/constants";
 import { checkIfKeysAreEmpty } from "@/utils/function";
-import { CaretCircleLeft, X } from "@phosphor-icons/react";
+import { CaretCircleLeft, CheckCircle, X } from "@phosphor-icons/react";
 import { omit } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
@@ -104,7 +104,7 @@ const PurchaseModal = ({
             value: 199,
           },
         });
-        onClose();
+        setStep(3);
       }
     } catch (error) {
       console.error("Error:", error);
@@ -119,7 +119,7 @@ const PurchaseModal = ({
     <div className="fixed inset-0 z-[999] flex h-screen w-screen items-center justify-center bg-black bg-opacity-70 p-[42px] text-black max-sm:p-[20px]">
       <div className="w-[700px] rounded-md bg-white p-[16px] md:p-[24px]">
         {/* Step - 1 */}
-        {step === 1 ? (
+        {step === 1 && (
           <div>
             {/* Modal Header */}
             <div className="flex items-start justify-between">
@@ -183,9 +183,8 @@ const PurchaseModal = ({
               </div>
             </form>
           </div>
-        ) : (
-          // Step - 2
-
+        )}
+        {step === 2 && (
           <form onSubmit={handlePaymentFormSubmit} name="payment-form">
             {/* Modal Header */}
             <div className="flex items-start justify-between">
@@ -251,6 +250,24 @@ const PurchaseModal = ({
               </button>
             </div>
           </form>
+        )}
+        {step === 3 && (
+          <div className="flex flex-col items-center justify-center gap-[12px]">
+            <CheckCircle className="text-green-500" size={80} />
+            <h2 className="text-[28px] font-bold text-black md:text-[32px]">
+              Thank you!
+            </h2>
+            <p className="text-center text-gray-600">
+              Thanks for your payment. We will verify your payment and send the
+              e-book to your email address ({formData.email}).
+            </p>
+            <button
+              className="mb-1 rounded-md border border-gray-400 bg-white px-[16px] py-[8px] text-[14px] font-normal transition-all duration-500 hover:bg-white hover:text-primary md:text-[16px]"
+              onClick={onClose}
+            >
+              Back to Home
+            </button>
+          </div>
         )}
       </div>
     </div>
