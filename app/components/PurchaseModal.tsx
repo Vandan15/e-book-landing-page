@@ -62,7 +62,7 @@ const PurchaseModal = ({
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json", // Send data as JSON
+            "Content-Type": "text/plain", // Send data as JSON
           },
           body: JSON.stringify(formData),
         }
