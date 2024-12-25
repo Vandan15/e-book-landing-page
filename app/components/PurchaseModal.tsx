@@ -2,11 +2,12 @@
 import { pushDataLayerEvent } from "@/utils/analytics";
 import { ROUTES } from "@/utils/constants";
 import { checkIfKeysAreEmpty } from "@/utils/function";
-import { CaretCircleLeft, X } from "@phosphor-icons/react";
+import { CaretCircleLeft, CheckCircle, X } from "@phosphor-icons/react";
 import { omit } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import QrCode from "@/app/assets/qr-code.png";
 
 const PurchaseModal = ({
   isOpen,
@@ -34,20 +35,43 @@ const PurchaseModal = ({
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handlePersonalInfoFormSubmit = (
+  const handlePersonalInfoFormSubmit = async (
     e: React.FormEvent<HTMLFormElement>
   ) => {
     e.preventDefault();
-    pushDataLayerEvent({
-      event: "user_info_added",
-      button_text: "Continue",
-      button_location: "inside_purchase_modal",
-      ecommerce: {
-        currency: "INR",
-        value: 199,
-      },
-    });
-    setStep(2);
+    try {
+      // Make the fetch request
+      setIsLoading(true);
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbz93XvEn-3JfIEBSQeNmZAz8aU1nBITVvuuLxhRRGhikNDuH3x0_qx1fnRRwm50VJ1akA/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain", // Send data as JSON
+          },
+          body: JSON.stringify({ ...formData, status: "PENDING" }),
+        }
+      );
+
+      // Handle the response
+      if (response.ok) {
+        await response.text();
+        pushDataLayerEvent({
+          event: "user_info_added",
+          button_text: "Continue",
+          button_location: "inside_purchase_modal",
+          ecommerce: {
+            currency: "INR",
+            value: 199,
+          },
+        });
+        setStep(2);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handlePaymentFormSubmit = async (
@@ -64,7 +88,7 @@ const PurchaseModal = ({
           headers: {
             "Content-Type": "text/plain", // Send data as JSON
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({ ...formData, status: "COMPLETED" }),
         }
       );
 
@@ -80,7 +104,7 @@ const PurchaseModal = ({
             value: 199,
           },
         });
-        onClose();
+        setStep(3);
       }
     } catch (error) {
       console.error("Error:", error);
@@ -95,7 +119,7 @@ const PurchaseModal = ({
     <div className="fixed inset-0 z-[999] flex h-screen w-screen items-center justify-center bg-black bg-opacity-70 p-[42px] text-black max-sm:p-[20px]">
       <div className="w-[700px] rounded-md bg-white p-[16px] md:p-[24px]">
         {/* Step - 1 */}
-        {step === 1 ? (
+        {step === 1 && (
           <div>
             {/* Modal Header */}
             <div className="flex items-start justify-between">
@@ -149,18 +173,18 @@ const PurchaseModal = ({
                 <button
                   type="submit"
                   className="rounded-md bg-primary px-[30px] py-[12px] font-bold text-white transition-all duration-500 hover:bg-bgDark hover:text-white disabled:opacity-50"
-                  disabled={checkIfKeysAreEmpty(
-                    omit(formData, ["referenceId"])
-                  )}
+                  disabled={
+                    checkIfKeysAreEmpty(omit(formData, ["referenceId"])) ||
+                    isLoading
+                  }
                 >
-                  Continue (1/2)
+                  {isLoading ? "Processing..." : "Continue (1/2)"}
                 </button>
               </div>
             </form>
           </div>
-        ) : (
-          // Step - 2
-
+        )}
+        {step === 2 && (
           <form onSubmit={handlePaymentFormSubmit} name="payment-form">
             {/* Modal Header */}
             <div className="flex items-start justify-between">
@@ -189,8 +213,8 @@ const PurchaseModal = ({
                 <X size={24} weight="bold" color="#000000" />
               </button>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <Image src={"/QR.png"} alt="QR" height={300} width={300} />
+            <div className="mt-[16px] flex flex-col items-center justify-center gap-2">
+              <Image src={QrCode} alt="QR" height={300} width={300} />
               <input
                 type="text"
                 name="referenceId"
@@ -222,10 +246,28 @@ const PurchaseModal = ({
                   }) || isLoading
                 }
               >
-                Confirm
+                {isLoading ? "Processing..." : "Confirm"}
               </button>
             </div>
           </form>
+        )}
+        {step === 3 && (
+          <div className="flex flex-col items-center justify-center gap-[12px]">
+            <CheckCircle className="text-green-500" size={80} />
+            <h2 className="text-[28px] font-bold text-black md:text-[32px]">
+              Thank you!
+            </h2>
+            <p className="text-center text-gray-600">
+              Thanks for your payment. We will verify your payment and send the
+              e-book to your email address ({formData.email}).
+            </p>
+            <button
+              className="mb-1 rounded-md border border-gray-400 bg-white px-[16px] py-[8px] text-[14px] font-normal transition-all duration-500 hover:bg-white hover:text-primary md:text-[16px]"
+              onClick={onClose}
+            >
+              Back to Home
+            </button>
+          </div>
         )}
       </div>
     </div>

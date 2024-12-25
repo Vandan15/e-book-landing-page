@@ -70,10 +70,10 @@ const Review = () => {
           {` See How This eBook Helped Others Generate Premium Leads`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
-        <p className="w-full max-w-[550px] text-center text-muted">
+        {/* <p className="w-full max-w-[550px] text-center text-muted">
           This book is concerned with creating typography and is essential for
           professionals who regularly work for clients.
-        </p>
+        </p> */}
 
         {/* Slider */}
         <div className="flex w-full items-center justify-center max-md:hidden">
