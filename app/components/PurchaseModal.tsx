@@ -1,4 +1,5 @@
 "use client";
+import { pushDataLayerEvent } from "@/utils/analytics";
 import { CaretCircleLeft, X } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,6 +28,33 @@ const PurchaseModal = ({
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleContinueButtonClick = () => {
+    pushDataLayerEvent({
+      event: "user_info_added",
+      button_text: "Continue",
+      button_location: "inside_purchase_modal",
+      ecommerce: {
+        currency: "INR",
+        value: 199,
+      },
+    });
+    setStep(2);
+  };
+
+  const handlePaymentFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    pushDataLayerEvent({
+      event: "purchase",
+      button_text: "Confirm",
+      button_location: "inside_purchase_modal",
+      ecommerce: {
+        currency: "INR",
+        value: 199,
+      },
+    });
+    onClose();
   };
 
   if (!isOpen) return null;
@@ -83,7 +111,7 @@ const PurchaseModal = ({
             </form>
             <div className="flex justify-end">
               <button
-                onClick={() => setStep(2)}
+                onClick={handleContinueButtonClick}
                 className="mt-[12px] rounded-md bg-primary px-[30px] py-[12px] font-bold text-white transition-all duration-500 hover:bg-bgDark hover:text-white"
               >
                 Continue (1/2)
@@ -93,7 +121,7 @@ const PurchaseModal = ({
         ) : (
           // Step - 2
 
-          <div>
+          <form onSubmit={handlePaymentFormSubmit}>
             {/* Modal Header */}
             <div className="flex items-start justify-between">
               <div className="flex items-center gap-[12px]">
@@ -141,16 +169,13 @@ const PurchaseModal = ({
             </p>
             <div className="flex justify-end">
               <button
-                onClick={() => {
-                  onClose();
-                  setStep(1);
-                }}
+                type="submit"
                 className="mt-[12px] rounded-md bg-primary px-[30px] py-[12px] font-bold text-white transition-all duration-500 hover:bg-bgDark hover:text-white"
               >
                 Confirm
               </button>
             </div>
-          </div>
+          </form>
         )}
       </div>
     </div>
