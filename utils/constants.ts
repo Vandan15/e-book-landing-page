@@ -3,4 +3,5 @@ export const ROUTES = {
   termsOfUse: "/terms-of-use",
   home: "/",
   contact: "/contact-us",
+  refundPolicy: "/refund-policy",
 };
