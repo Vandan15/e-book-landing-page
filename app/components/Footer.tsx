@@ -39,6 +39,14 @@ const Footer = () => {
               >
                 Privacy policy
               </Link>
+              <Link
+                href={ROUTES.refundPolicy}
+                className={`text-[16px] text-muted hover:text-primary ${
+                  pathname === ROUTES.refundPolicy ? "text-primary" : ""
+                }`}
+              >
+                Refund policy
+              </Link>
             </div>
           </div>
           <div className="flex items-end gap-[72px] max-sm:flex-col max-sm:items-start max-sm:gap-[12px]">
