@@ -43,7 +43,10 @@ export default function RefundPolicy() {
                 <ul className="mt-4 list-disc pl-6 text-gray-700">
                   <li>Contact our support team within 7 days of purchase</li>
                   <li>Provide your order number and reason for the refund</li>
-                  <li>Our team will review your request within 48 hours</li>
+                  <li>
+                    Our team will review your request within 48 hours if
+                    applicable
+                  </li>
                 </ul>
               </section>
 
@@ -72,7 +75,10 @@ export default function RefundPolicy() {
                 </h2>
                 <p className="text-gray-700">
                   If you have any questions about our refund policy, please
-                  contact our support team at support@example.com
+                  contact our support team at{" "}
+                  <a href="mailto:conversionshastra@gmail.com">
+                    conversionshastra@gmail.com
+                  </a>
                 </p>
               </section>
             </div>
