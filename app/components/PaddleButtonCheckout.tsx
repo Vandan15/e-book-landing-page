@@ -1,7 +1,12 @@
 "use client";
 
 import { pushDataLayerEvent } from "@/utils/analytics";
-import { Environments, initializePaddle, Paddle } from "@paddle/paddle-js";
+import {
+  CheckoutEventNames,
+  Environments,
+  initializePaddle,
+  Paddle,
+} from "@paddle/paddle-js";
 import React, { useEffect, useState } from "react";
 
 export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
@@ -11,6 +16,31 @@ export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
     initializePaddle({
       environment: process.env.NEXT_PUBLIC_PADDLE_ENV as Environments,
       token: process.env.NEXT_PUBLIC_PADDLE_TOKEN!,
+      eventCallback: (event) => {
+        if (event.name === CheckoutEventNames.CHECKOUT_COMPLETED) {
+          pushDataLayerEvent({
+            event: "purchase",
+            button_text: "Confirm",
+            button_location: "paddle_checkout",
+            ecommerce: {
+              currency: "INR",
+              value: 199,
+            },
+          });
+        }
+        //  when user info is added in paddle checkout form
+        if (event.name === CheckoutEventNames.CHECKOUT_CUSTOMER_CREATED) {
+          pushDataLayerEvent({
+            event: "user_info_added",
+            button_text: "Continue",
+            button_location: "inside_purchase_modal",
+            ecommerce: {
+              currency: "INR",
+              value: 199,
+            },
+          });
+        }
+      },
     }).then((paddleInstance: Paddle | undefined) => {
       if (paddleInstance) {
         setPaddle(paddleInstance);
@@ -24,8 +54,10 @@ export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
       button_text: btnText,
       button_location: "landing_page",
     });
+    //pri_01jgr0702fm2nvj74j7n57wzvp
+    //pri_01jgqw5scw2t7jxz0tzhe2vm0p - lIVE
     paddle?.Checkout.open({
-      items: [{ priceId: "pri_01jgqw5scw2t7jxz0tzhe2vm0p", quantity: 1 }],
+      items: [{ priceId: "pri_01jgr0702fm2nvj74j7n57wzvp", quantity: 1 }],
     });
   };
 
