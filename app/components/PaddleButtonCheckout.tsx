@@ -57,7 +57,7 @@ export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
     //pri_01jgr0702fm2nvj74j7n57wzvp
     //pri_01jgqw5scw2t7jxz0tzhe2vm0p - lIVE
     paddle?.Checkout.open({
-      items: [{ priceId: "pri_01jgr0702fm2nvj74j7n57wzvp", quantity: 1 }],
+      items: [{ priceId: "pri_01jgqw5scw2t7jxz0tzhe2vm0p", quantity: 1 }],
     });
   };
 
