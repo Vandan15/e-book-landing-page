@@ -1,23 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { Check } from "@phosphor-icons/react";
-import PurchaseModal from "./PurchaseModal";
-import { pushDataLayerEvent } from "@/utils/analytics";
+import PaddleButtonCheckout from "./PaddleButtonCheckout";
+import CoverImg from "../assets/book-cover.png";
 
 const Landing = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleButtonClick = () => {
-    pushDataLayerEvent({
-      event: "cta_click",
-      button_text: "Get Your E-book Now (199/-)",
-      button_location: "landing_section",
-    });
-    setIsModalOpen(true);
-  };
-
   return (
     <section className="flex w-full flex-col items-center justify-center bg-bgDark">
       <div className="flex w-full max-w-[1636px] justify-between gap-[32px] px-[160px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
@@ -65,27 +53,22 @@ const Landing = () => {
 
             {/* Btn */}
             <div>
-              <button
-                className="mb-1 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold transition-all duration-500 hover:bg-white hover:text-primary md:text-[20px]"
-                onClick={handleButtonClick}
-              >
-                Get Your E-book Now (199/-)
-              </button>
+              <PaddleButtonCheckout btnText="Get Your E-book Now (199/-)" />
               <p className="text-[14px] italic">43% OFF (Including GST.)</p>
             </div>
 
-            <PurchaseModal
+            {/* <PurchaseModal
               isOpen={isModalOpen}
               onClose={() => setIsModalOpen(false)}
-            />
+            /> */}
           </div>
         </div>
 
         {/* Right */}
         <div className="flex items-center justify-center">
           <Image
-            src={"/book.png"}
-            alt="book.png"
+            src={CoverImg}
+            alt="book-cover"
             height={600}
             width={445}
             className="max-lg:w-screen"
