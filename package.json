@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paddle/paddle-js": "^1.3.3",
     "@phosphor-icons/react": "^2.1.7",
     "lodash": "4.17.21",
     "next": "15.1.0",
