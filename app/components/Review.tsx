@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Bag,
-  ClockUser,
-  Star,
-  StarHalf,
-  User,
-  UserCheck,
-  UserCircle,
-} from "@phosphor-icons/react";
+import { Bag, Star, StarHalf, UserCircle } from "@phosphor-icons/react";
 import { useRef, useState } from "react";
 
 const Review = () => {
@@ -139,6 +131,7 @@ const Review = () => {
                   review={review.review}
                   name={review.name}
                   image={review.image}
+                  designation={review.designation}
                 />
               </div>
             ))}
