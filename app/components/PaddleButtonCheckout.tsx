@@ -9,7 +9,13 @@ import {
 } from "@paddle/paddle-js";
 import React, { useEffect, useState } from "react";
 
-export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
+export default function PaddleButtonCheckout({
+  btnText,
+  btnIcon,
+}: {
+  btnText: string;
+  btnIcon?: React.ReactNode;
+}) {
   const [paddle, setPaddle] = useState<Paddle>();
 
   useEffect(() => {
@@ -54,7 +60,7 @@ export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
       button_text: btnText,
       button_location: "landing_page",
     });
-    //pri_01jgr0702fm2nvj74j7n57wzvp
+    //pri_01jgr0702fm2nvj74j7n57wzvp - Sandbox
     //pri_01jgqw5scw2t7jxz0tzhe2vm0p - lIVE
     paddle?.Checkout.open({
       items: [{ priceId: "pri_01jgqw5scw2t7jxz0tzhe2vm0p", quantity: 1 }],
@@ -63,10 +69,11 @@ export default function PaddleButtonCheckout({ btnText }: { btnText: string }) {
 
   return (
     <button
-      className="mb-1 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold transition-all duration-500 hover:bg-white hover:text-primary md:text-[20px]"
+      className="mb-1 flex items-center gap-2 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold text-white transition-all duration-500 hover:bg-white hover:text-primary md:text-[20px]"
       onClick={openCheckout}
     >
       {btnText}
+      {btnIcon}
     </button>
   );
 }

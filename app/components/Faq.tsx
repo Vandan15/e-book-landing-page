@@ -30,11 +30,11 @@ const Faq = () => {
               question="How do I access the eBook after purchase?"
               answer="Once you make the payment, you’ll receive an instant download link in your email. You can access the eBook immediately and start reading right away."
             />
-            <Accordian
+            {/* <Accordian
               faqId={3}
               question="Website reponse taking time, how to improve?"
               answer="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum"
-            />
+            /> */}
             <Accordian
               faqId={4}
               question="Is the eBook available offline?"

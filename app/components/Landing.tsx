@@ -13,8 +13,8 @@ const Landing = () => {
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex max-w-[600px] flex-col gap-[24px] text-white max-lg:max-w-full">
             <h3 className="text-[16px]">
-              Struggling with Low-Quality Leads? OR Getting High-Quality Leads
-              at Very High Cost?
+              Struggling with Low-Quality Leads? OR Are You Paying More Price
+              for High-quality Leads?
             </h3>
             <h1 className="text-[56px] font-extrabold leading-[58px] max-sm:text-[38px]">
               This e-book is your ALL-IN-ONE solution
@@ -52,7 +52,7 @@ const Landing = () => {
             </div>
 
             {/* Btn */}
-            <div>
+            <div className="hidden lg:block">
               <PaddleButtonCheckout btnText="Get Your E-book Now (199/-)" />
               <p className="text-[14px] italic">43% OFF (Including GST.)</p>
             </div>
@@ -65,7 +65,7 @@ const Landing = () => {
         </div>
 
         {/* Right */}
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-8">
           <Image
             src={CoverImg}
             alt="book-cover"
@@ -73,6 +73,10 @@ const Landing = () => {
             width={445}
             className="max-lg:w-screen"
           />
+          <div className="block lg:hidden">
+            <PaddleButtonCheckout btnText="Get Your E-book Now (199/-)" />
+            <p className="text-[14px] italic">43% OFF (Including GST.)</p>
+          </div>
         </div>
       </div>
     </section>

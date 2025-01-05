@@ -179,10 +179,10 @@ const ChapterCover = () => {
           {` Chapters Covered to Make You Master of Lead Generation`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
-        <p className="w-full max-w-[700px] text-center text-muted">
+        {/* <p className="w-full max-w-[700px] text-center text-muted">
           This lovely, well-written book is concerned with creating typography
           and is essential for professionals who regularly work for clients.
-        </p>
+        </p> */}
 
         {/* Chapters */}
         <div className="flex max-w-[800px] items-center justify-start max-lg:flex-wrap">
