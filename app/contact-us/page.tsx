@@ -28,11 +28,15 @@ const ContactUs = () => {
 
     // Here you would typically send the data to your backend
     // For now, we'll just show a success message
-    setStatus({
-      type: "success",
-      message: "Thank you for your message! We'll get back to you soon.",
-    });
+    // setStatus({
+    //   type: "success",
+    //   message: "Thank you for your message! We'll get back to you soon.",
+    // });
     setFormData({ firstName: "", lastName: "", message: "" });
+    window.open(
+      `mailto:conversionshastra@gmail.com?subject=Inquiry from ${formData.firstName} ${formData.lastName}&body=${formData.message}`,
+      "_blank"
+    );
   };
 
   const handleChange = (

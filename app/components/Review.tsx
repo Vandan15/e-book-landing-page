@@ -1,6 +1,6 @@
 "use client";
 
-import { Star } from "@phosphor-icons/react";
+import { Bag, Star, StarHalf, UserCircle } from "@phosphor-icons/react";
 import { useRef, useState } from "react";
 
 const Review = () => {
@@ -10,7 +10,7 @@ const Review = () => {
     {
       id: 1,
       image: "/review-1.jpg",
-      name: "- Akshaye Parekh",
+      name: "Akshaye Parekh",
       designation: "Owner Skybean Branding Agency, California",
       reviewTitle: "",
       review:
@@ -19,7 +19,7 @@ const Review = () => {
     {
       id: 2,
       image: "/review-2.jpg",
-      name: "- Bipin Goel",
+      name: "Bipin Goel",
       designation: "Owner Sunrise Investments, Indore",
       reviewTitle: "",
       review:
@@ -28,7 +28,7 @@ const Review = () => {
     {
       id: 3,
       image: "/review-3.jpg",
-      name: "- Dr Geeta Bhosle",
+      name: "Dr Geeta Bhosle",
       designation: "Geeta Nutrition Club, East Kalyan, Mumbai",
       reviewTitle: "",
       review:
@@ -67,7 +67,7 @@ const Review = () => {
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[100px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Section Title */}
         <h1 className="relative w-full max-w-[800px] text-center text-[28px] font-extrabold text-white md:text-[32px]">
-          {` See How This eBook Helped Others Generate Premium Leads`}
+          {`See How This E-book Helped Its Readers Generate High-quality Leads`}
           <div className="absolute -bottom-[5%] left-1/2 h-[4px] w-[50px] -translate-x-1/2 bg-primary"></div>
         </h1>
         {/* <p className="w-full max-w-[550px] text-center text-muted">
@@ -84,15 +84,14 @@ const Review = () => {
             {extendedReviews.map((review, index) => (
               <div
                 key={index}
-                className={`w-[400px] flex-shrink-0 px-[8px] transition-opacity duration-500 ${
-                  activeIndex === review.id ? "opacity-100" : "opacity-40"
-                }`}
+                className={`w-[400px] flex-shrink-0 px-[8px] transition-opacity duration-500`}
               >
                 <Card
                   reviewTitle={review.reviewTitle}
                   review={review.review}
                   name={review.name}
                   image={review.image}
+                  designation={review.designation}
                 />
               </div>
             ))}
@@ -132,6 +131,7 @@ const Review = () => {
                   review={review.review}
                   name={review.name}
                   image={review.image}
+                  designation={review.designation}
                 />
               </div>
             ))}
@@ -160,11 +160,13 @@ export default Review;
 const Card = ({
   name,
   review,
+  designation,
 }: {
   reviewTitle: string;
   image: string;
   name: string;
   review: string;
+  designation: string;
 }) => {
   return (
     <div className="flex flex-col items-start justify-start gap-[24px] rounded-lg bg-white p-[37px] shadow-md">
@@ -173,11 +175,11 @@ const Card = ({
         <Star weight="fill" color="#f2b827" />
         <Star weight="fill" color="#f2b827" />
         <Star weight="fill" color="#f2b827" />
-        <Star weight="fill" color="#f2b827" />
+        <StarHalf weight="fill" color="#f2b827" />
       </div>
       {/* <h3 className="text-[22px] font-bold text-[#051431]">{reviewTitle}</h3> */}
-      <p className="text-[18px] text-[#666666]">{review}</p>
-      <div className="flex items-center justify-center gap-[24px]">
+      <p className="text-[16px] text-[#666666]">{review}</p>
+      <div className="flex flex-col items-start justify-center gap-[4px]">
         {/* <Image
           src={image}
           alt={image}
@@ -185,7 +187,14 @@ const Card = ({
           width={60}
           className="rounded-full"
         /> */}
-        <h5 className="text-[18px] text-[#666666]">{name}</h5>
+        <h5 className="flex items-center gap-2 text-[18px] text-[#000]">
+          <UserCircle />
+          {name}
+        </h5>
+        <h5 className="flex items-center gap-2 text-[14px] text-[#666666]">
+          <Bag />
+          {designation}
+        </h5>
       </div>
     </div>
   );

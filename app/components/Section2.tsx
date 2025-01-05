@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle } from "@phosphor-icons/react";
+import { Warning } from "@phosphor-icons/react";
 import PurchaseModal from "./PurchaseModal";
 import { useState } from "react";
 
@@ -24,23 +24,24 @@ const Section2 = () => {
         {/* Right */}
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex flex-col text-white max-lg:max-w-full">
-            <h1 className="mt-[8px] text-[28px] font-extrabold md:text-[32px]">
+            <h1 className="relative mt-[8px] text-[28px] font-extrabold md:text-[32px]">
               Immediately Buy This e-book If You are Struggling With the Below
               Lead Related Issues…
+              <div className="absolute left-[86px] top-[40px] h-[4px] w-[180px] -translate-x-1/2 bg-primary md:left-[100px] md:top-[46px] md:w-[200px]"></div>
             </h1>
-            <h4 className="mt-[26px] max-w-[500px] text-[18px] text-muted">
+            {/* <h4 className="mt-[26px] max-w-[500px] text-[18px] text-muted">
               This lovely, well-written book is concerned with creating
               typography and is essential for professionals.
-            </h4>
+            </h4> */}
 
             {/* List */}
             <div className="mt-[36px] flex flex-col gap-[24px] px-[24px] max-sm:px-[12px] lg:flex-row">
               <div className="flex flex-col gap-[16px]">
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -52,9 +53,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -66,9 +67,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -80,9 +81,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -94,9 +95,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -110,9 +111,9 @@ const Section2 = () => {
               <div className="flex flex-col gap-[16px]">
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -124,9 +125,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -138,9 +139,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -152,9 +153,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>
@@ -167,9 +168,9 @@ const Section2 = () => {
                 </div>
                 <div className="flex items-center justify-start gap-[16px]">
                   <div className="min-w-[42px]">
-                    <CheckCircle
+                    <Warning
                       className="flex items-center justify-center text-[42px] max-lg:text-[42px]"
-                      color="#4bb543"
+                      color="#FFA500"
                       size={38}
                     />
                   </div>

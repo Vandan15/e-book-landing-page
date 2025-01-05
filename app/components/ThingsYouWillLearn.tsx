@@ -16,7 +16,7 @@ const ThingsYouWillLearn = () => {
         </p> */}
 
         {/* Cards */}
-        <div className="mt-[24px] flex w-full flex-wrap items-center justify-between gap-[32px] max-lg:flex-col">
+        <div className="mt-[24px] flex w-full flex-wrap items-center justify-center gap-[32px] max-lg:flex-col">
           <Card
             heading="Business Owners"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
@@ -57,6 +57,11 @@ const ThingsYouWillLearn = () => {
             heading="Home Service Providers"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
           />
+          <div className="flex w-full items-center justify-center gap-4">
+            <hr className="text-red w-full opacity-40" />
+            <p className="text-[16px] font-semibold text-white">AND</p>
+            <hr className="text-red w-full opacity-40" />
+          </div>
           <Card
             heading="Everyone Who Uses FB & IG Ads to Generate Leads"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
