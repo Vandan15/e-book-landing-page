@@ -25,7 +25,7 @@ const WhoThisBookIsFor = () => {
           <Card
             Icon={Briefcase}
             heading=""
-            para="Industry-Specific Tips — Real estate, B2B, consulting, education, and more."
+            para="40 minutes of reading for a lifetime of results"
           />
           <Card
             Icon={HourglassSimple}
