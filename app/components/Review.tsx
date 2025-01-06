@@ -122,9 +122,7 @@ const Review = () => {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className={`w-full flex-shrink-0 px-[8px] transition-opacity duration-500 ${
-                  activeIndex === review.id ? "opacity-100" : "opacity-40"
-                } hover:opacity-100`}
+                className={`w-full flex-shrink-0 px-[8px] transition-opacity duration-500 hover:opacity-100`}
               >
                 <Card
                   reviewTitle={review.reviewTitle}
