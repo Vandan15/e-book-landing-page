@@ -166,8 +166,8 @@ export default function TermsOfUse() {
                 </h2>
                 <p className="text-gray-700">
                   These Terms of Use are governed by and construed following the
-                  laws of [Insert Jurisdiction]. Any disputes will be resolved
-                  in the courts of [Insert Jurisdiction].
+                  laws of India. Any disputes will be resolved in the courts of
+                  India.
                 </p>
               </section>
 

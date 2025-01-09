@@ -66,6 +66,10 @@ export default function RefundPolicy() {
                     You will receive an email confirmation once the refund is
                     processed
                   </li>
+                  <li>
+                    Processing and crediting will be done within 5-10 business
+                    days
+                  </li>
                 </ul>
               </section>
 
@@ -80,6 +84,17 @@ export default function RefundPolicy() {
                     conversionshastra@gmail.com
                   </a>
                 </p>
+                <ul className="mt-4 list-disc pl-6 text-gray-700">
+                  <li>
+                    Email:{" "}
+                    <a href="mailto:vandankhamkar2@gmail.com">
+                      vandankhamkar2@gmail.com
+                    </a>
+                  </li>
+                  <li>Phone: +91 9999999999</li>
+                  <li>Address: 396445, Gujarat, India</li>
+                  <li>Managed by: Team ClickToClient</li>
+                </ul>
               </section>
             </div>
           </div>
