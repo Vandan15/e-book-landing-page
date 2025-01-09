@@ -80,9 +80,9 @@ export default function RefundPolicy() {
                 <p className="text-gray-700">
                   If you have any questions about our refund policy, please
                   contact our support team at{" "}
-                  <a href="mailto:conversionshastra@gmail.com">
+                  {/* <a href="mailto:conversionshastra@gmail.com">
                     conversionshastra@gmail.com
-                  </a>
+                  </a> */}
                 </p>
                 <ul className="mt-4 list-disc pl-6 text-gray-700">
                   <li>
