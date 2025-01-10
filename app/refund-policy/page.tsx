@@ -93,7 +93,7 @@ export default function RefundPolicy() {
                   </li>
                   <li>Phone: +91 9999999999</li>
                   <li>Address: 396445, Gujarat, India</li>
-                  <li>Managed by: Team ClickToClient</li>
+                  <li>Managed by: VANDAN NITINKUMAR KHAMKAR</li>
                 </ul>
               </section>
             </div>
