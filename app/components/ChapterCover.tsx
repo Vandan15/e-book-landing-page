@@ -7,7 +7,7 @@ const ChapterCover = () => {
       faqId: 1,
       question: "Chapter-1: Overview of Meta Ads Lead Generation Ecosystem",
       answer:
-        "Different ways to generate leads from Meta Ads, most people don’t consider.",
+        "Different ways to generate leader from Meta Ads, most people don’t consider.",
     },
     {
       faqId: 2,
@@ -68,7 +68,7 @@ const ChapterCover = () => {
       question:
         "Chapter-11: Common Leads-Related Issues & Their Effective Solutions",
       answer:
-        "Troubleshooting common lead generation problems. \n\nProblem 1: Duplicate Leads\nProblem 2: Leads Are Saying 'I Didn’t Fill Out the Form'\nProblem 3: Lead Cost Is Too High\nProblem 4: Getting Quality Leads But Quality Is Not Consistent\nProblem 5: Leads Have No Buying Intent\nProblem 6: Leads Are Not Picking Calls or Replying to Messages\nProblem 7: Leads Express Interest in the Future, But Not Now\nProblem 8: Getting Leads From Outside Your Desired Geographic Location\nProblem 9: Leads are Filling Fake Details",
+        "Troubleshooting common leader generation problems. \n\nProblem 1: Duplicate Leads\nProblem 2: Leads Are Saying 'I Didn’t Fill Out the Form'\nProblem 3: Lead Cost Is Too High\nProblem 4: Getting Quality Leads But Quality Is Not Consistent\nProblem 5: Leads Have No Buying Intent\nProblem 6: Leads Are Not Picking Calls or Replying to Messages\nProblem 7: Leads Express Interest in the Future, But Not Now\nProblem 8: Getting Leads From Outside Your Desired Geographic Location\nProblem 9: Leads are Filling Fake Details",
     },
     {
       faqId: 12,
@@ -85,13 +85,13 @@ const ChapterCover = () => {
       faqId: 14,
       question:
         "Chapter-14: How to Scale Campaign Without Compromising Lead Quality?",
-      answer: "Best practices for scaling while maintaining lead quality.",
+      answer: "Best practices for scaling while maintaining leader quality.",
     },
     {
       faqId: 15,
       question:
         "Chapter-15: Using Meta’s Lead Center to Manage Leads Effectively",
-      answer: "How to use Meta’s built-in tools to handle leads.",
+      answer: "How to use Meta’s built-in tools to handle leader.",
     },
     {
       faqId: 16,
@@ -119,7 +119,7 @@ const ChapterCover = () => {
     {
       faqId: 20,
       question: "Chapter-20: Leads Got Converted - Now What?",
-      answer: "Strategies to get maximum value from converted leads.",
+      answer: "Strategies to get maximum value from converted leader.",
     },
   ];
 
@@ -191,7 +191,7 @@ const ChapterCover = () => {
             <Chapter
               chapterNo="Chapter 1"
               chapterTitle="Overview of Meta Ads Lead Generation Ecosystem"
-              chapterDescription="Different ways to generate leads from Meta Ads, most people don’t consider"
+              chapterDescription="Different ways to generate leader from Meta Ads, most people don’t consider"
             />
             <Chapter
               chapterNo="Chapter 2"
@@ -245,7 +245,7 @@ const ChapterCover = () => {
             <Chapter
               chapterNo="Chapter 11"
               chapterTitle="Common Leads-Related Issues & Their Effective Solutions"
-              chapterDescription="Troubleshooting common lead generation problems"
+              chapterDescription="Troubleshooting common leader generation problems"
             />
             <Chapter
               chapterNo="Chapter 12"
@@ -260,7 +260,7 @@ const ChapterCover = () => {
             <Chapter
               chapterNo="Chapter 14"
               chapterTitle="How to Scale Campaign Without Compromising Lead Quality?"
-              chapterDescription="Best practices for scaling while maintaining lead quality"
+              chapterDescription="Best practices for scaling while maintaining leader quality"
             />
           </div> */}
 
@@ -269,7 +269,7 @@ const ChapterCover = () => {
             <Chapter
               chapterNo="Chapter 15"
               chapterTitle="Using Meta’s Lead Center to Manage Leads Effectively"
-              chapterDescription="How to use Meta’s built-in tools to handle leads"
+              chapterDescription="How to use Meta’s built-in tools to handle leader"
             />
             <Chapter
               chapterNo="Chapter 16"
@@ -294,7 +294,7 @@ const ChapterCover = () => {
             <Chapter
               chapterNo="Chapter 20"
               chapterTitle="Leads Got Converted - Now What?"
-              chapterDescription="Strategies to get maximum value from converted leads"
+              chapterDescription="Strategies to get maximum value from converted leader"
             />
             <Chapter
               chapterNo="Chapter 21"

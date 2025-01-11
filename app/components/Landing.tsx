@@ -31,9 +31,9 @@ const Landing = () => {
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px]">
-                  With over 5 years of experience in the lead generation
+                  With over 5 years of experience in the leader generation
                   ecosystem, we have made an e-book to help you generate
-                  high-quality leads that your business needs.
+                  high-quality leader that your business needs.
                 </p>
               </div>
               <div className="flex items-start justify-start gap-[12px]">
@@ -45,8 +45,8 @@ const Landing = () => {
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px]">
-                  It includes proven strategies trusted by top lead generation
-                  agencies to acquire HIGH-QUALITY leads at AFFORDABLE COSTS.
+                  It includes proven strategies trusted by top leader generation
+                  agencies to acquire HIGH-QUALITY leader at AFFORDABLE COSTS.
                 </p>
               </div>
             </div>
