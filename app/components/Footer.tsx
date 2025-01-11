@@ -20,9 +20,9 @@ const Footer = () => {
               <Image src={Logo} alt="logo" height={80} width={180} />
             </Link>
             <p className="mt-[12px] text-[16px] text-muted">
-              With over 5 years of experience in the lead generation ecosystem,
-              we have made an e-book to help you generate high-quality leads
-              that your business needs.
+              With over 5 years of experience in the leader generation
+              ecosystem, we have made an e-book to help you generate
+              high-quality leader that your business needs.
             </p>
           </div>
           <div className="flex items-end gap-[72px] max-sm:flex-col max-sm:items-start max-sm:gap-[12px]">

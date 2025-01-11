@@ -20,7 +20,7 @@ const WhoThisBookIsFor = () => {
           <Card
             Icon={CheckCircle}
             heading=""
-            para="No fluff, just actionable advice for each of your lead-related issues."
+            para="No fluff, just actionable advice for each of your leader-related issues."
           />
           <Card
             Icon={Briefcase}
