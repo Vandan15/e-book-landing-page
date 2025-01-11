@@ -23,7 +23,7 @@ const Review = () => {
       designation: "Owner Sunrise Investments, Indore",
       reviewTitle: "",
       review:
-        "I am a stock advisor. To run my business, I need a huge & consistent flow of high-quality leaders who can work with me. I was running ads on Facebook and Instagram but getting leaders who didn’t have much budget to invest. I needed high-budget clients but was unable to get them. I purchased this e-book after seeing an ad on Instagram. I read every chapter carefully and followed the suggestions to target high-budget clients. Today, I only work with clients having a high budget to invest.",
+        "I am a stock advisor. To run my business, I need a huge & consistent flow of high-quality leader who can work with me. I was running ads on Facebook and Instagram but getting leader who didn’t have much budget to invest. I needed high-budget clients but was unable to get them. I purchased this e-book after seeing an ad on Instagram. I read every chapter carefully and followed the suggestions to target high-budget clients. Today, I only work with clients having a high budget to invest.",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Review = () => {
       designation: "Geeta Nutrition Club, East Kalyan, Mumbai",
       reviewTitle: "",
       review:
-        "I am a nutrition consultant. I guide people to get in shape before their marriage. My business wants lots of leaders who can take our demo sessions and then apply for a 2-month course. Since I run ads in specific areas, I was getting lots of duplicate leaders also leaders were not of buying intent. After reading this book, I got to know what mistakes I am making. I sent this e-book to a person who was running my ads. He implemented the things and I started getting high-quality leaders with high-converting intent.",
+        "I am a nutrition consultant. I guide people to get in shape before their marriage. My business wants lots of leader who can take our demo sessions and then apply for a 2-month course. Since I run ads in specific areas, I was getting lots of duplicate leader also leader were not of buying intent. After reading this book, I got to know what mistakes I am making. I sent this e-book to a person who was running my ads. He implemented the things and I started getting high-quality leader with high-converting intent.",
     },
   ];
 

@@ -33,7 +33,8 @@ const Landing = () => {
                 <p className="text-[16px] md:text-[18px]">
                   With over 5 years of experience in the leader generation
                   ecosystem, we have made an e-book to help you generate
-                  high-quality leaders that your business needs.
+                  high-quality leaders that your business needs. high-quality
+                  leader that your business needs.
                 </p>
               </div>
               <div className="flex items-start justify-start gap-[12px]">
