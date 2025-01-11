@@ -13,8 +13,8 @@ const Landing = () => {
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex max-w-[600px] flex-col gap-[24px] text-white max-lg:max-w-full">
             <h3 className="text-[16px]">
-              Struggling with Low-Quality Leads? OR Are You Paying More Price
-              for High-quality Leads?
+              Struggling with Low-Quality leaders? OR Are You Paying More Price
+              for High-quality leaders?
             </h3>
             <h1 className="text-[56px] font-extrabold leading-[58px] max-sm:text-[38px]">
               This e-book is your ALL-IN-ONE solution
@@ -33,7 +33,8 @@ const Landing = () => {
                 <p className="text-[16px] md:text-[18px]">
                   With over 5 years of experience in the leader generation
                   ecosystem, we have made an e-book to help you generate
-                  high-quality leader that your business needs.
+                  high-quality leaders that your business needs. high-quality
+                  leader that your business needs.
                 </p>
               </div>
               <div className="flex items-start justify-start gap-[12px]">
@@ -46,7 +47,7 @@ const Landing = () => {
                 </div>
                 <p className="text-[16px] md:text-[18px]">
                   It includes proven strategies trusted by top leader generation
-                  agencies to acquire HIGH-QUALITY leader at AFFORDABLE COSTS.
+                  agencies to acquire HIGH-QUALITY leaders at AFFORDABLE COSTS.
                 </p>
               </div>
             </div>
