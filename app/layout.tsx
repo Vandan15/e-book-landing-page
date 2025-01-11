@@ -9,7 +9,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title:
-    "Buy Clicks to Clients: A No-fluff Guide to Master leader Generation Using Meta Ads",
+    "Buy Clicks to Clients: A No-fluff Guide to Master customer Generation Using Meta Ads",
   description:
     "Does your business depend on high-quality leader? If yes, this e-book is a must buy for you. Includes 20 chapters to teach you run leader gen campaign on Meta and get high-quality leader.",
   verification: {

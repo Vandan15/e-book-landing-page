@@ -12,7 +12,7 @@ const Subscribe = () => {
       <div className="flex w-full max-w-[1636px] flex-col items-center justify-center gap-[32px] px-[160px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         <div className="flex w-full flex-col items-center justify-center rounded-md bg-white bg-opacity-[0.05] px-[30px] py-[70px]">
           <h5 className="mb-[16px] text-[32px] text-white">
-            Start Generating High Quality leaders Today
+            Start Generating High prospecting acquisition Today
           </h5>
           {/* <h2 className="text-center text-[46px] font-black text-white max-sm:text-[36px]">
             Get a free chapter of this book

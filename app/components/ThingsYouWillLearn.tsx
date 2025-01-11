@@ -33,10 +33,10 @@ const ThingsYouWillLearn = () => {
             heading="Freelancers"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
           />
-          <Card
+          {/* <Card
             heading="Stock advisors"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
-          />
+          /> */}
           <Card
             heading="Coaches & Trainers"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
@@ -45,27 +45,27 @@ const ThingsYouWillLearn = () => {
             heading="Business Development Person"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
           />
-          <Card
+          {/* <Card
             heading="Independent Financial Advisors"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
-          />
-          <Card
+          /> */}
+          {/* <Card
             heading="Insurance Agents"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
-          />
+          /> */}
           <Card
             heading="Home Service Providers"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
           />
-          <div className="flex w-full items-center justify-center gap-4">
+          {/* <div className="flex w-full items-center justify-center gap-4">
             <hr className="text-red w-full opacity-40" />
             <p className="text-[16px] font-semibold text-white">AND</p>
             <hr className="text-red w-full opacity-40" />
-          </div>
-          <Card
+          </div> */}
+          {/* <Card
             heading="Everyone Who Uses FB & IG Ads to Generate leaders"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
-          />
+          /> */}
         </div>
       </div>
     </section>
