@@ -90,8 +90,8 @@ export default function RefundPolicy() {
                     <a href="mailto:vandankhamkar2@gmail.com">
                       vandankhamkar2@gmail.com
                     </a>
-                  </li>
-                  <li>Phone: +91 9999999999</li>
+                  </li>u
+                  <li>Phone: +91 8128770872</li>
                   <li>Address: 396445, Gujarat, India</li>
                   <li>Managed by: VANDAN NITINKUMAR KHAMKAR</li>
                 </ul>
