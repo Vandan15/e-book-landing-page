@@ -26,7 +26,7 @@ const Section2 = () => {
           <div className="flex flex-col text-white max-lg:max-w-full">
             <h1 className="relative mt-[8px] text-[28px] font-extrabold md:text-[32px]">
               Immediately Buy This e-book If You are Struggling With the Below
-              Lead Related Issues…
+              leader Related Issues…
               <div className="absolute left-[86px] top-[40px] h-[4px] w-[180px] -translate-x-1/2 bg-primary md:left-[100px] md:top-[46px] md:w-[200px]"></div>
             </h1>
             {/* <h4 className="mt-[26px] max-w-[500px] text-[18px] text-muted">
@@ -47,7 +47,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Duplicate Leads
+                      Duplicate leaders
                     </h5>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Are Filling Fake Details
+                      leaders Are Filling Fake Details
                     </h5>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Lead Cost Is Too High
+                      leader Cost Is Too High
                     </h5>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Getting Quality Leads But Quality Is Not Consistent
+                      Getting Quality leaders But Quality Is Not Consistent
                     </h5>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Have No Buying Intent
+                      leaders Have No Buying Intent
                     </h5>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Have No Buying Intent
+                      leaders Have No Buying Intent
                     </h5>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Are Not Picking Calls or Replying to Messages
+                      leaders Are Not Picking Calls or Replying to Messages
                     </h5>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Express Interest in the Future, But NOT NOW
+                      leaders Express Interest in the Future, But NOT NOW
                     </h5>
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Getting Leads From Outside Your Desired Geographic
+                      Getting leaders From Outside Your Desired Geographic
                       Location
                     </h5>
                   </div>
@@ -176,7 +176,7 @@ const Section2 = () => {
                   </div>
                   <div className="flex flex-col gap-[12px]">
                     <h5 className="text-[18px] font-semibold">
-                      Leads Are Saying “I Didn’t Fill Out the Form”
+                      leaders Are Saying “I Didn’t Fill Out the Form”
                     </h5>
                   </div>
                 </div>

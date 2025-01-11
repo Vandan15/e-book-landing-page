@@ -63,7 +63,7 @@ const ThingsYouWillLearn = () => {
             <hr className="text-red w-full opacity-40" />
           </div>
           <Card
-            heading="Everyone Who Uses FB & IG Ads to Generate Leads"
+            heading="Everyone Who Uses FB & IG Ads to Generate leaders"
             para="Well-written book is concerned with creating typography and is essential for professionals who regularly"
           />
         </div>
