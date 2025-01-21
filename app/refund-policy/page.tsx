@@ -88,7 +88,7 @@ export default function RefundPolicy() {
                   <li>
                     Email:{" "}
                     <a href="mailto:vandankhamkar1@gmail.com">
-                      vandankhamkar2@gmail.com
+                      vandankhamkar1@gmail.com
                     </a>
                   </li>
                   <li>Phone: +91 8128770872</li>
