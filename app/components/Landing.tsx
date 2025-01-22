@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { Check } from "@phosphor-icons/react";
-import PaddleButtonCheckout from "./PaddleButtonCheckout";
 import CoverImg from "../assets/book-cover.png";
+import PayUCheckoutButton from "./PayUCheckoutButton";
 
 const Landing = () => {
   return (
@@ -55,7 +55,7 @@ const Landing = () => {
 
             {/* Btn */}
             <div className="hidden lg:block">
-              <PaddleButtonCheckout btnText="Get Your E-book Now (199/-)" />
+              <PayUCheckoutButton btnText="Get Your E-book Now (199/-)" />
               <p className="text-[14px] italic">43% OFF (Including GST.)</p>
             </div>
 
@@ -76,7 +76,7 @@ const Landing = () => {
             className="max-lg:w-screen"
           />
           <div className="block lg:hidden">
-            <PaddleButtonCheckout btnText="Get Your E-book Now (199/-)" />
+            <PayUCheckoutButton btnText="Get Your E-book Now (199/-)" />
             <p className="text-[14px] italic">43% OFF (Including GST.)</p>
           </div>
         </div>

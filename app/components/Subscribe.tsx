@@ -3,7 +3,7 @@
 import { ArrowRight } from "@phosphor-icons/react";
 import PurchaseModal from "./PurchaseModal";
 import { useState } from "react";
-import PaddleButtonCheckout from "./PaddleButtonCheckout";
+import PayUCheckoutButton from "./PayUCheckoutButton";
 
 const Subscribe = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Subscribe = () => {
               placeholder="Email Address"
               className="h-[60px] w-full max-w-[700px] rounded-sm px-[12px] text-[18px] outline-none"
             /> */}
-          <PaddleButtonCheckout
+          <PayUCheckoutButton
             btnText="Claim Your Copy for Just ₹199"
             btnIcon={<ArrowRight />}
           />
