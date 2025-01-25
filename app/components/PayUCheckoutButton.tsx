@@ -16,7 +16,7 @@ export default function PayUCheckoutButton({
       button_text: btnText,
       button_location: "landing_page",
     });
-    window.open("https://test.payumoney.com/url/mIfTQkpw3UMm", "_self");
+    window.open(process.env.NEXT_PUBLIC_PAYU_PURCHASE_URL, "_self");
   };
 
   return (
