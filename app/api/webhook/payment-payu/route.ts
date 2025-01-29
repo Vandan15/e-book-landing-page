@@ -37,16 +37,13 @@ export async function POST(req: NextRequest) {
             };
 
             // Send data to Google Sheets
-            await fetch(
-              "https://script.google.com/macros/s/AKfycbz93XvEn-3JfIEBSQeNmZAz8aU1nBITVvuuLxhRRGhikNDuH3x0_qx1fnRRwm50VJ1akA/exec",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "text/plain",
-                },
-                body: JSON.stringify({ ...excelData, status: "COMPLETED" }),
-              }
-            );
+            await fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
+              method: "POST",
+              headers: {
+                "Content-Type": "text/plain",
+              },
+              body: JSON.stringify({ ...excelData, status: "COMPLETED" }),
+            });
           }
         } catch (e) {
           console.error("Error processing webhook data:", e);
