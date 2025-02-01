@@ -87,16 +87,16 @@ export default function RefundPolicy() {
                 <ul className="mt-4 list-disc pl-6 text-gray-700">
                   <li>
                     Email:{" "}
-                    <a href="mailto:vandankhamkar1@gmail.com">
-                      vandankhamkar1@gmail.com
+                    <a href="mailto:clicktoclientbook@gmail.com">
+                      clicktoclientbook@gmail.com
                     </a>
                   </li>
-                  <li>Phone: +91 8128770872</li>
+                  {/* <li>Phone: +91 8128770872</li>
                   <li>
                     Address: B6 Pushpakunj Smrutikunj Society, Jalalpore Road,
                     Dhamdhamiya Pool, 396445 - Navsari, Gujarat, India
-                  </li>
-                  <li>Managed by: VANDAN NITINKUMAR KHAMKAR</li>
+                  </li> */}
+                  <li>Managed by: Team ClickToClient</li>
                 </ul>
               </section>
             </div>
