@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Jost } from "next/font/google";
 import "./globals.css";
 import GoogleTagManager from "./components/GoogleTagManager";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
+});
+
+const jost = Jost({
+  subsets: ["latin"],
+  variable: "--jost",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +32,9 @@ export default function RootLayout({
       <head>
         <GoogleTagManager />
       </head>
-      <body className={`${dmSans.className} bg-bgDark antialiased`}>
+      <body
+        className={`${dmSans.className} ${jost.variable} bg-bgDark antialiased`}
+      >
         {children}
       </body>
     </html>

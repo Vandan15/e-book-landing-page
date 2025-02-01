@@ -22,6 +22,22 @@ const Faq = () => {
           <div className="flex flex-col items-start justify-center gap-[32px]">
             <Accordian
               faqId={1}
+              question="I’ve run Meta ads before, but my leads never convert. Will this help?"
+              answer="Yes, this ebook provides proven strategies to optimize your Meta ads for higher conversions."
+            />
+            <Accordian
+              faqId={1}
+              question="I want to build my career in lead gen using Meta ads, will it help?"
+              answer="Absolutely! This ebook is designed to help you master lead generation on Meta ads. You'll gain actionable insights and skills to run successful campaigns."
+            />
+            <Accordian
+              faqId={1}
+              question="How long will it take to see results after implementing these strategies?"
+              answer="Results can vary depending on factors like your niche, budget, and ad creative. However, many users start seeing improvements within a few weeks of applying the strategies from the ebook."
+            />
+
+            <Accordian
+              faqId={1}
               question="I have hired a person/agency to run my ads, should I buy this e-book?"
               answer="Yes, you can buy this e-book and send it to a particular person, telling them to implement the steps mentioned here. This will be a great learning opportunity for them to improve your campaigns."
             />
@@ -57,7 +73,7 @@ const Faq = () => {
             <Accordian
               faqId={7}
               question="How can I ask questions or get support for the eBook?"
-              answer="If you have any queries related to e-books, you can contact us at conversionshastra@gmail.com. Our team will try to answer you as soon as possible."
+              answer="If you have any queries related to e-books, you can contact us at clicktoclientbook@gmail.com. Our team will try to answer you as soon as possible."
             />
           </div>
         </div>

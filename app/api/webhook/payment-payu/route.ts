@@ -24,9 +24,11 @@ export async function POST(req: NextRequest) {
     const jsonObject = Object.fromEntries(
       new URLSearchParams(urlEncodedString)
     );
+    console.log(jsonObject);
 
     const { email, txnid } = jsonObject;
     if (email && txnid) {
+      console.log(email, txnid);
       // Acknowledge webhook immediately, immediate body will be sent in queue
       setImmediate(async () => {
         try {
@@ -36,14 +38,21 @@ export async function POST(req: NextRequest) {
               referenceId: txnid,
             };
 
+            console.log(excelData);
+
             // Send data to Google Sheets
-            await fetch(process.env.NEXT_PUBLIC_APP_SCRIPT_URL!, {
-              method: "POST",
-              headers: {
-                "Content-Type": "text/plain",
-              },
-              body: JSON.stringify({ ...excelData, status: "COMPLETED" }),
-            });
+            const response = await fetch(
+              process.env.NEXT_PUBLIC_APP_SCRIPT_URL!,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "text/plain",
+                },
+                body: JSON.stringify({ ...excelData, status: "COMPLETED" }),
+              }
+            );
+
+            console.log(response);
           }
         } catch (e) {
           console.error("Error processing webhook data:", e);

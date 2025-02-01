@@ -181,10 +181,10 @@ export default function TermsOfUse() {
                   <br />
                   Email:{" "}
                   <a
-                    href="mailto:conversionshastra@gmail.com"
+                    href="mailto:clicktoclientbook@gmail.com"
                     className="text-blue-600 hover:text-blue-800"
                   >
-                    conversionshastra@gmail.com
+                    clicktoclientbook@gmail.com
                   </a>
                 </p>
               </section>

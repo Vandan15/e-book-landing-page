@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Check } from "@phosphor-icons/react";
 import CoverImg from "../assets/book-cover.png";
-import PayUCheckoutButton from "./PayUCheckoutButton";
+import PriceBox from "./PriceBox";
 
 const Landing = () => {
   return (
@@ -13,8 +13,8 @@ const Landing = () => {
         <div className="flex items-center justify-center max-lg:justify-start">
           <div className="flex max-w-[600px] flex-col gap-[24px] text-white max-lg:max-w-full">
             <h3 className="text-[16px]">
-              Struggling with Low-Quality client sourcing? OR Are You Paying
-              More Price for High-quality customer acquisition?
+              Struggling with Low-Quality leads? OR Are You Paying More For High
+              Quality Leads?
             </h3>
             <h1 className="text-[56px] font-extrabold leading-[58px] max-sm:text-[38px]">
               This e-book is your ALL-IN-ONE solution
@@ -31,10 +31,8 @@ const Landing = () => {
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px]">
-                  With over 5 years of experience in the customer acquisition
-                  generation ecosystem, we have made an e-book to help you
-                  generate high-quality customer acquisition that your business
-                  needs.
+                  With 5+ years of experience in lead generation, we created an
+                  e-book to help you acquire high-quality leads.
                 </p>
               </div>
               <div className="flex items-start justify-start gap-[12px]">
@@ -46,17 +44,19 @@ const Landing = () => {
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px]">
-                  It includes proven strategies trusted by top customer
-                  generation agencies to acquire HIGH-QUALITY customers at
-                  AFFORDABLE COSTS.
+                  With 5+ years of experience in lead generation, we created an
+                  e-book to help you acquire high-quality leads.
                 </p>
               </div>
             </div>
 
             {/* Btn */}
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <PayUCheckoutButton btnText="Get Your E-book Now (199/-)" />
               <p className="text-[14px] italic">43% OFF (Including GST.)</p>
+            </div> */}
+            <div className="hidden w-full lg:block">
+              <PriceBox />
             </div>
 
             {/* <PurchaseModal
@@ -73,11 +73,14 @@ const Landing = () => {
             alt="book-cover"
             height={600}
             width={445}
-            className="max-lg:w-screen"
+            className="rounded-lg max-lg:w-screen"
           />
-          <div className="block lg:hidden">
-            <PayUCheckoutButton btnText="Get Your E-book Now (199/-)" />
-            <p className="text-[14px] italic">43% OFF (Including GST.)</p>
+          <div className="block w-full lg:hidden">
+            {/* <PayUCheckoutButton btnText="Get Your E-book Now (199/-)" />
+            <p className="text-center text-[14px] italic text-white">
+              43% OFF (Including GST.)
+            </p> */}
+            <PriceBox />
           </div>
         </div>
       </div>
