@@ -25,3 +25,21 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.price-box-wrapper {
+  box-shadow: 12px 12px 14px -10px rgba(255, 255, 255, 0.52);
+  border: 1px solid #6f6f6f;
+  border-radius: 16px;
+  padding: 24px;
+  width: 350px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  button {
+    font-family: var(--jost);
+    border-radius: 50px;
+    @media screen and (max-width: 468px) {
+      font-size: 14px;
+    }
+  }
+}

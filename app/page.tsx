@@ -9,15 +9,17 @@ import ThingsYouWillLearn from "./components/ThingsYouWillLearn";
 import WhoThisBookIsFor from "./components/WhoThisBookIsFor";
 import Subscribe from "./components/Subscribe";
 import CommonLayout from "./components/CommonLayout";
+import Section2 from "./components/Section2";
+import ChapterCover from "./components/ChapterCover";
 
 const Home = () => {
   return (
     <CommonLayout>
       <main className="relative h-auto w-full min-w-[320px]">
         <Landing />
-        {/* <Section2 /> */}
+        <Section2 />
         <ThingsYouWillLearn />
-        {/* <ChapterCover /> */}
+        <ChapterCover />
         <WhoThisBookIsFor />
         <Subscribe />
         <Review />

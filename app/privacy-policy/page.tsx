@@ -199,7 +199,7 @@ export default function PrivacyPolicy() {
                   For questions or concerns regarding this Privacy Policy,
                   please contact us at:
                   <br />
-                  Email: conversionshastra@gmail.com
+                  Email: clicktoclientbook@gmail.com
                 </p>
               </section>
             </div>

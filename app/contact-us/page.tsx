@@ -34,7 +34,7 @@ const ContactUs = () => {
     // });
     setFormData({ firstName: "", lastName: "", message: "" });
     window.open(
-      `mailto:conversionshastra@gmail.com?subject=Inquiry from ${formData.firstName} ${formData.lastName}&body=${formData.message}`,
+      `mailto:clicktoclientbook@gmail.com?subject=Inquiry from ${formData.firstName} ${formData.lastName}&body=${formData.message}`,
       "_blank"
     );
   };
