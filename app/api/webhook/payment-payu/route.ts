@@ -79,7 +79,7 @@ export async function POST(req: NextRequest) {
                 "Content-Type": "text/plain",
               },
               body: JSON.stringify({ ...excelData, status: "COMPLETED" }),
-              // signal: AbortSignal.timeout(10000),
+              signal: AbortSignal.timeout(10000),
             }
           );
 
