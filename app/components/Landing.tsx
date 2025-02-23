@@ -44,8 +44,8 @@ const Landing = () => {
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px]">
-                  With 5+ years of experience in lead generation, we created an
-                  e-book to help you acquire high-quality leads.
+                  It includes proven strategies trusted by top lead generation
+                  agencies to acquire HIGH-QUALITY leads at AFFORDABLE COSTS.
                 </p>
               </div>
             </div>
