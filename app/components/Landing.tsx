@@ -4,10 +4,50 @@ import Image from "next/image";
 import { Check } from "@phosphor-icons/react";
 import CoverImg from "../assets/book-cover.png";
 import PriceBox from "./PriceBox";
+import { generateHash } from "@/utils/function";
 
 const Landing = () => {
+  const handlePay = () => {
+    const txnId = `txn_${new Date().getTime()}`;
+
+    const hash = generateHash({
+      txnId,
+      amount: "10.00",
+      productInfo: "Iphone",
+      firstName: "John",
+      email: "john@gmail.com",
+    });
+    fetch("https://test.payu.in/_payment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        key: process.env.NEXT_PUBLIC_PAYU_MERCHANT_KEY,
+        txnid: txnId,
+        amount: "10.00",
+        productinfo: "Iphone",
+        firstname: "John",
+        email: "john@gmail.com",
+        phone: "8128770872",
+        surl: "https://test.com",
+        furl: "https://test.com",
+        hash,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <section className="flex w-full flex-col items-center justify-center bg-bgDark">
+      <button onClick={handlePay} className="text-white">
+        Pay Now
+      </button>
       <div className="flex w-full max-w-[1636px] justify-between gap-[32px] px-[160px] py-[42px] max-xl:px-[60px] max-lg:flex-col max-sm:px-[30px]">
         {/* Left */}
         <div className="flex items-center justify-center max-lg:justify-start">
