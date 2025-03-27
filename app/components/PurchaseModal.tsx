@@ -62,7 +62,7 @@ const PurchaseModal = ({
           button_location: "inside_purchase_modal",
           ecommerce: {
             currency: "INR",
-            value: 199,
+            value: 299,
           },
         });
         setStep(2);
@@ -101,7 +101,7 @@ const PurchaseModal = ({
           button_location: "inside_purchase_modal",
           ecommerce: {
             currency: "INR",
-            value: 199,
+            value: 299,
           },
         });
         setStep(3);
