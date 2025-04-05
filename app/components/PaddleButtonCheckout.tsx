@@ -30,7 +30,7 @@ export default function PaddleButtonCheckout({
             button_location: "paddle_checkout",
             ecommerce: {
               currency: "INR",
-              value: 299,
+              value: 199,
             },
           });
         }
@@ -42,7 +42,7 @@ export default function PaddleButtonCheckout({
             button_location: "inside_purchase_modal",
             ecommerce: {
               currency: "INR",
-              value: 299,
+              value: 199,
             },
           });
         }
