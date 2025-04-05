@@ -21,7 +21,7 @@ export default function PayUCheckoutButton({
 
   return (
     <button
-      className="mb-1 flex items-center gap-2 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold text-white transition-all duration-500 hover:bg-white hover:text-primary md:text-[20px]"
+      className="mb-1 flex items-center gap-2 rounded-md bg-primary px-[16px] py-[8px] text-[18px] font-bold text-white transition-all duration-500 ease-out hover:bg-white hover:text-primary md:text-[20px]"
       onClick={openCheckout}
     >
       {btnText}

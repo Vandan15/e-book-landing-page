@@ -7,7 +7,7 @@ export default function PriceBox() {
     <div className="price-box-wrapper relative mt-6">
       <div className="flex flex-col items-center justify-center gap-[24px]">
         <div className="flex flex-col items-center">
-          <h3 className="text-4xl font-extrabold italic text-white">₹299/-</h3>
+          <h3 className="text-4xl font-extrabold italic text-white">199/-</h3>
           <p className="text-[16px] italic text-white">
             43% OFF (Including GST.)
           </p>

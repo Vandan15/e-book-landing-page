@@ -28,7 +28,7 @@ const Subscribe = () => {
               className="h-[60px] w-full max-w-[700px] rounded-sm px-[12px] text-[18px] outline-none"
             /> */}
           <PayUCheckoutButton
-            btnText="Claim Your Copy for Just ₹299"
+            btnText="Claim Your Copy for Just ₹199"
             btnIcon={<ArrowRight />}
           />
           {/* <button
